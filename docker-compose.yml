@@ -1,0 +1,22 @@
+# cambios de prueba
+services:
+  application:
+    container_name: app_web
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    # depends_on:
+    #   - mongo
+    volumes:
+      - .:/usr/src/app
+  # mongo:
+  #   container_name: mongodatabase
+  #   image: mongo:4.2
+  #   restart: always
+  #   volumes:
+  #     - ./data:/data/db
+  #   ports:
+  #     - 27017:27017
