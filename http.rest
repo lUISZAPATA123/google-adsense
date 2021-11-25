@@ -1,0 +1,28 @@
+POST http://localhost:3000/api/category HTTP/1.1
+content-type: application/json
+
+{
+    "name_category":"Deporte"
+}
+###
+GET http://localhost:3000/api/category HTTP/1.1
+content-type: application/json 
+
+{
+    "name_category":"Musica"
+}
+
+###
+GET http://localhost:3000/api/category HTTP/1.1
+
+### Create Content 
+POST http://localhost:3000/api/content HTTP/1.1
+content-type: application/json 
+
+{
+    "title_content":"Musica ",
+    "subtitle_content": "Musica",
+    "description_content":"Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "url_image_content":"https://res.cloudinary.com/ingenio/image/upload/v1635254951/jwrjsf8hfisewp9pm9uj.webp",
+    "content_category":"619a60929325444b7526d57b"
+}

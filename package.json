@@ -8,15 +8,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.4.2",
+    "mongoose": "^6.0.13",
     "next": "12.0.4",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "styled-components": "^5.3.3",
+    "tailwindcss": "^2.2.19"
   },
   "devDependencies": {
+    "@types/mongoose": "^5.11.97",
     "@types/node": "16.11.9",
     "@types/react": "17.0.35",
+    "@types/react-icons": "^3.0.0",
+    "@types/styled-components": "^5.1.15",
+    "autoprefixer": "^10.4.0",
     "eslint": "7",
     "eslint-config-next": "12.0.4",
+    "postcss": "^8.3.11",
     "typescript": "4.5.2"
   }
 }
