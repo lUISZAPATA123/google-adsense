@@ -2,7 +2,7 @@ import { Menu, Transition } from "@headlessui/react";
 import React, { Fragment } from "react";
 import Link from "next/link";
 import { BiGridAlt } from "react-icons/bi";
-function classNames(...classes) {
+function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
 }
 export default function Dropdown() {
@@ -22,7 +22,7 @@ export default function Dropdown() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 w-56 mt-2 origin-top-right bg-fondo divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute right-0 w-56 mt-2 origin-top-right divide-y divide-gray-100 rounded-md shadow-lg bg-fondo ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (

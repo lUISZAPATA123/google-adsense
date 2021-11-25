@@ -1,4 +1,5 @@
 # cambios de prueba
+services: '3.9'
 services:
   application:
     container_name: app_web
